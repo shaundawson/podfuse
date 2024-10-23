@@ -1,0 +1,257 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-container {
+    flex: 1;
+    padding: 20px;
+    background-color: #fafafa;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #52bcb8;
+}
+
+.logo img {
+    height: 75px;
+    width: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: #696d6d;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    color: #d8466b;
+    text-decoration: underline;
+}
+
+/* Introduction Section */
+.intro {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fafafa;
+    margin-bottom: 20px;
+}
+
+.intro-text {
+    flex: 1;
+}
+
+.intro img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* Team Section */
+.team {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border: 2px solid #52bcb8;
+    border-radius: 10px;
+}
+
+.team img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+/* Personas Section */
+.personas {
+    padding: 20px;
+    background-color: #fafafa;
+}
+
+/* Persona Container - Responsive Grid */
+.persona-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Individual Persona Card */
+.persona {
+    background-color: #fff;
+    border: 2px solid #52bcb8;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for persona cards */
+.persona:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.persona img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.persona h3 {
+    color: #d8466b;
+    margin: 0 0 10px 0;
+}
+
+.persona p, .persona ul {
+    color: #696d6d;
+}
+
+.persona ul {
+    padding-left: 20px;
+    text-align: left;
+}
+
+/* Persona - Media Queries for Mobile */
+@media (max-width: 768px) {
+    .persona-container {
+        grid-template-columns: 1fr;
+    }
+
+    .persona {
+        padding: 15px;
+    }
+
+    .persona img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* Slideshow container centered and taking 50% of height */
+.slideshow-container {
+
+    margin: auto; /* Centers horizontally */
+    position: relative; /* Needed for the navigation buttons */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideshow-container img {
+    margin: 20px auto;
+    border-radius: 8px;
+    width: 50%; /* Ensure the image takes up the container's full width */
+    height: 50%; /* Ensure the image takes up the container's height */
+    object-fit: cover; /* Ensures image maintains aspect ratio within the container */
+    box-sizing: border-box;
+}
+
+/* Navigation buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Dots for navigation */
+.dots-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.next {
+    right: 0;
+}
+
+div#slideshow1{
+    text-align:center;
+}
+
+/* Moodboard */
+.moodboard-image {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.moodboard-image img {
+    width: 65%; 
+    max-width: 75%;
+    height: auto; 
+}
+
+/* Sticky footer */
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin-top: auto; /* Pushes the footer to the bottom */
+}
+
