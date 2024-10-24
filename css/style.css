@@ -164,11 +164,10 @@ nav ul li a:hover {
     }
 }
 
-/* Slideshow container centered and taking 50% of height */
+/* Slideshow container */
 .slideshow-container {
-
-    margin: auto; /* Centers horizontally */
-    position: relative; /* Needed for the navigation buttons */
+    margin: auto; 
+    position: relative; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -177,9 +176,9 @@ nav ul li a:hover {
 .slideshow-container img {
     margin: 20px auto;
     border-radius: 8px;
-    width: 50%; /* Ensure the image takes up the container's full width */
-    height: 50%; /* Ensure the image takes up the container's height */
-    object-fit: cover; /* Ensures image maintains aspect ratio within the container */
+    width: 50%; 
+    height: 50%; 
+    object-fit: cover; 
     box-sizing: border-box;
 }
 
@@ -246,12 +245,27 @@ div#slideshow1{
     height: auto; 
 }
 
+/* Flowchart */
+.flowchart {
+    text-align: center;
+}
+
+.flowchart .image-container {
+    display: inline-block;
+    max-width: 100%;
+}
+
+.flowchart img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
 /* Sticky footer */
 footer {
     background-color: #f1f1f1;
     text-align: center;
     padding: 10px;
     width: 100%;
-    margin-top: auto; /* Pushes the footer to the bottom */
-}
+    margin-top: auto;
 
