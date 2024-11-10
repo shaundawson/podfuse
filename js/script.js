@@ -14,7 +14,7 @@ if (document.querySelector("#slideshow1")) {
     function showSlides1(n) {
         let i;
         let slides1 = document.querySelectorAll("#slideshow1 .slide");
-        let dots1 = document.querySelectorAll(".dots-container .dot");
+        let dots1 = document.querySelectorAll("#dots-container1 .dot");
         if (n > slides1.length) { slideIndex1 = 1 }
         if (n < 1) { slideIndex1 = slides1.length }
         for (i = 0; i < slides1.length; i++) {
@@ -44,7 +44,7 @@ if (document.querySelector("#slideshow2")) {
     function showSlides2(n) {
         let i;
         let slides2 = document.querySelectorAll("#slideshow2 .slide");
-        let dots2 = document.querySelectorAll(".dots-container .dot");
+        let dots2 = document.querySelectorAll("#dots-container2 .dot");
         if (n > slides2.length) { slideIndex2 = 1 }
         if (n < 1) { slideIndex2 = slides2.length }
         for (i = 0; i < slides2.length; i++) {
@@ -55,5 +55,35 @@ if (document.querySelector("#slideshow2")) {
         }
         slides2[slideIndex2 - 1].style.display = "block";
         dots2[slideIndex2 - 1].className += " active";
+    }
+}
+
+// Wireframes Slideshow Logic
+let slideIndex3 = 1;
+if (document.querySelector("#wf-slideshow-container")) {
+    showSlides3(slideIndex3);
+
+    function plusSlides3(n) {
+        showSlides3(slideIndex3 += n);
+    }
+
+    function currentSlide3(n) {
+        showSlides3(slideIndex3 = n);
+    }
+
+    function showSlides3(n) {
+        let i;
+        let slides3 = document.querySelectorAll("#wf-slideshow-container .wf-slide");
+        let dots3 = document.querySelectorAll("#wf-dots-container .dot");
+        if (n > slides3.length) { slideIndex3 = 1 }
+        if (n < 1) { slideIndex3 = slides3.length }
+        for (i = 0; i < slides3.length; i++) {
+            slides3[i].style.display = "none";
+        }
+        for (i = 0; i < dots3.length; i++) {
+            dots3[i].className = dots3[i].className.replace(" active", "");
+        }
+        slides3[slideIndex3 - 1].style.display = "block";
+        dots3[slideIndex3 - 1].className += " active";
     }
 }
