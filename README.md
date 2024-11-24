@@ -1,48 +1,67 @@
 # PodFuse - Podcast Simplified 🎙️
 
-**PodFuse** is an intuitive and user-friendly React application designed to simplify podcast management. With PodFuse, podcast enthusiasts can consolidate premium, ad-free podcasts from platforms like Patreon into one unified feed, streamlining their listening experience across popular podcast apps like Overcast and PocketCasts.
+The PodFuse website is a showcase of the design, research, and planning process for a future app that will simplify podcast management. This site provides insights into the app’s purpose, user personas, scenarios, and prototypes, serving as a blueprint for the app’s future development.
+
+🔗 **[Live Website](https://zesty-lebkuchen-80b9a0.netlify.app/)**
+
+---
+## **About PodFuse**
+
+PodFuse, the envisioned app, aims to consolidate premium, ad-free podcasts from platforms like Patreon into a unified feed, making it easier for users to manage their listening experience across apps like Overcast and PocketCasts.  
+
+While the app is not yet built, the website offers:
+- A conceptual introduction to PodFuse.
+- Research-backed insights into user needs.
+- Visual prototypes, personas, and workflows to guide development.
+
+This website acts as a foundational step toward turning PodFuse into a reality.
 
 ---
 
-## Features
+## **Features of the Website**
 
-### 🎯 Core Features
-- **Automated Feed Fetching**: Directly connects to Patreon to automatically retrieve premium podcast feeds.
-- **Unified Feed Management**: Combines all your ad-free content into one feed, eliminating manual XML imports.
-- **Seamless Integration**: Easily integrates with popular podcast apps for a hassle-free experience.
-- **Automatic Updates**: Syncs new episodes automatically, so you never miss out.
-- **User-Friendly Interface**: Designed for all levels of tech-savviness, offering a smooth and intuitive experience.
+### 🌟 **Pages Included**
+- **Introduction:** Overview of PodFuse and its purpose.
+- **Research:** Insights that inform the app’s design and development.
+- **Personas:** Profiles representing the app's potential users.
+- **Scenarios:** Storyboards demonstrating workflows and user interactions.
+- **Storyboard, Moodboard, Flowchart, and Wireframes:** Design assets for the app.
+- **Prototype:** Early drafts of the app’s UI/UX.
+- **References:** Resources that contributed to the planning and design process.
 
-### 🌟 Supporting Pages
-- **Introduction**: Overview of the project and its purpose.
-- **Research**: Insights and data backing the development of PodFuse.
-- **Personas**: User personas that guided the design and development process.
-- **Scenarios**: User workflows through scenario-based storyboarding.
-- **Storyboard, Moodboard, Flowchart, and Wireframes**: Visual aids documenting the app's design process.
-- **References**: Credited resources used during the project.
+### 🎯 **Purpose**
+This website is an informational resource to help communicate the vision of PodFuse to stakeholders, developers, and users. It is a roadmap for the future app.
 
 ---
 
-## Technologies Used
+## **Technologies Used for the Website**
 
-### Frontend
-- **React**: For building a modular and dynamic UI.
-- **Tailwind CSS**: For styling and responsive design.
-
-### Deployment
-- **Netlify**: For seamless CI/CD and hosting.
-- **GitHub**: For version control and code management.
+- **React:** For creating a modular and interactive user interface.
+- **Tailwind CSS:** For modern and responsive styling.
+- **Netlify:** For hosting and continuous deployment.
 
 ---
 
-## Setup and Installation
+## **Setup and Installation**
 
-### Prerequisites
-1. Node.js and npm installed on your machine.
-2. Git for version control.
+### **Prerequisites**
+- Node.js and npm installed.
+- Git for version control.
 
 ### Steps
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/your-username/podfuse.git
    cd podfuse
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+
+3. **Run the app locally:**:
+   ```bash
+   npm start
+
+4. **Build the app for production:**:
+   ```bash
+   npm run build
