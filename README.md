@@ -2,7 +2,7 @@
 
 The PodFuse website is a showcase of the design, research, and planning process for a future app that will simplify podcast management. This site provides insights into the app’s purpose, user personas, scenarios, and prototypes, serving as a blueprint for the app’s future development.
 
-🔗 **[Live Website](https://zesty-lebkuchen-80b9a0.netlify.app/)** <a href="https://zesty-lebkuchen-80b9a0.netlify.app/" target="_blank">View in a new tab</a>
+🔗 **[Live Website](https://zesty-lebkuchen-80b9a0.netlify.app/)** <a href="https://zesty-lebkuchen-80b9a0.netlify.app/" target="_blank"></a>
 
 
 ---
