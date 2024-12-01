@@ -1,5 +1,5 @@
 import React from "react";
-import Slideshow from "../components/Slideshow.js"
+import Slideshow from "../components/Slideshow.js";
 
 const images = [
     "./scenarios/scenario_1/scene1.png",
@@ -11,9 +11,9 @@ const images = [
 
 const Scenario1 = () => {
     return (
-        <div className="bg-gray-50 min-h-screen">
+        <div className="bg-[#121212] min-h-screen text-[#EDEDED]">
             <div className="container mx-auto px-6 lg:px-20 py-16">
-                <h1 className="text-4xl font-bold text-center text-gray-900 mb-12">
+                <h1 className="text-4xl font-bold text-center text-[#1DB954] mb-12">
                     Scenario 1
                 </h1>
                 <Slideshow images={images} />

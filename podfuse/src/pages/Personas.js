@@ -57,75 +57,83 @@ const personas = [
 
 const Personas = () => {
     return (
-        <div className="bg-gray-50 min-h-screen">
+        <div className="bg-[#121212] min-h-screen text-[#EDEDED]">
             <div className="container mx-auto px-6 lg:px-20 py-16">
-                <h1 className="text-4xl font-bold text-center text-gray-900 mb-12">
-                    Personas
-                </h1>
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                {/* Title and Subheading */}
+                <div className="text-center mb-12">
+                    <h1 className="text-2xl font-extrabold text-[#1DB954]">
+                        Understanding Our Users
+                    </h1>
+                    <p className="text-sm text-gray-400 mt-2">
+                        Meet the diverse personas who inspired the creation of PodFuse.
+                    </p>
+                </div>
+
+                {/* Personas Grid */}
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                     {personas.map((persona, index) => (
                         <div
                             key={index}
-                            className="flex flex-col lg:flex-row items-start bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition"
+                            className="bg-[#1C1C1C] p-6 rounded-lg shadow-md hover:shadow-lg transition"
                         >
-                            {/* Image */}
-                            <img
-                                src={persona.image}
-                                alt={persona.name}
-                                className="w-32 h-32 rounded-full shadow-lg lg:mr-6 flex-shrink-0"
-                            />
-                            {/* Text Content */}
-                            <div className="mt-4 lg:mt-0">
-                                <h3 className="text-2xl font-semibold text-gray-800">
-                                    {persona.name}
-                                </h3>
-                                <p className="text-gray-600 mt-1">
-                                    <strong>Age:</strong> {persona.age}
-                                </p>
-                                <p className="text-gray-600">
-                                    <strong>Occupation:</strong> {persona.occupation}
-                                </p>
-                                <p className="text-gray-600">
-                                    <strong>Location:</strong> {persona.location}
-                                </p>
-                                <p className="text-gray-600">
-                                    <strong>Tech-Savviness:</strong> {persona.techSavviness}
-                                </p>
+                            {/* Persona Header */}
+                            <div className="flex items-center mb-6">
+                                <img
+                                    src={persona.image}
+                                    alt={persona.name}
+                                    className="w-20 h-20 rounded-full shadow-md mr-6"
+                                />
+                                <div>
+                                    <h3 className="text-lg font-semibold text-[#1DB954]">
+                                        {persona.name}
+                                    </h3>
+                                    <p className="text-sm text-gray-400">
+                                        {persona.occupation} | {persona.location}
+                                    </p>
+                                </div>
+                            </div>
 
-                                <h4 className="text-lg font-bold text-gray-800 mt-4">
-                                    Back Story
-                                </h4>
-                                <p className="text-gray-600">{persona.backStory}</p>
-
-                                <h4 className="text-lg font-bold text-gray-800 mt-4">Goals</h4>
-                                <ul className="list-disc pl-6 text-gray-600">
-                                    {persona.goals.map((goal, i) => (
-                                        <li key={i}>{goal}</li>
-                                    ))}
-                                </ul>
-
-                                <h4 className="text-lg font-bold text-gray-800 mt-4">
-                                    Frustrations
-                                </h4>
-                                <ul className="list-disc pl-6 text-gray-600">
-                                    {persona.frustrations.map((frustration, i) => (
-                                        <li key={i}>{frustration}</li>
-                                    ))}
-                                </ul>
-
-                                <h4 className="text-lg font-bold text-gray-800 mt-4">
-                                    Motivations
-                                </h4>
-                                <ul className="list-disc pl-6 text-gray-600">
-                                    {persona.motivations.map((motivation, i) => (
-                                        <li key={i}>{motivation}</li>
-                                    ))}
-                                </ul>
-
-                                <h4 className="text-lg font-bold text-gray-800 mt-4">
-                                    Ideal Experience
-                                </h4>
-                                <p className="text-gray-600">{persona.idealExperience}</p>
+                            {/* Details */}
+                            <div className="space-y-4 text-sm text-gray-400">
+                                <div>
+                                    <strong className="text-[#1DB954]">Age:</strong> {persona.age}
+                                </div>
+                                <div>
+                                    <strong className="text-[#1DB954]">Tech-Savviness:</strong>{" "}
+                                    {persona.techSavviness}
+                                </div>
+                                <div>
+                                    <strong className="text-[#1DB954]">Back Story:</strong>{" "}
+                                    {persona.backStory}
+                                </div>
+                                <div>
+                                    <strong className="text-[#1DB954]">Goals:</strong>
+                                    <ul className="list-disc pl-6">
+                                        {persona.goals.map((goal, i) => (
+                                            <li key={i}>{goal}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+                                <div>
+                                    <strong className="text-[#1DB954]">Frustrations:</strong>
+                                    <ul className="list-disc pl-6">
+                                        {persona.frustrations.map((frustration, i) => (
+                                            <li key={i}>{frustration}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+                                <div>
+                                    <strong className="text-[#1DB954]">Motivations:</strong>
+                                    <ul className="list-disc pl-6">
+                                        {persona.motivations.map((motivation, i) => (
+                                            <li key={i}>{motivation}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+                                <div>
+                                    <strong className="text-[#1DB954]">Ideal Experience:</strong>{" "}
+                                    {persona.idealExperience}
+                                </div>
                             </div>
                         </div>
                     ))}

@@ -1,3 +1,13 @@
+body {
+  font-family: "Roboto", "Helvetica", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  /* Primary background color */
+  color: #EDEDED;
+  /* Default text color */
+}
+
 .App {
   text-align: center;
 }
@@ -14,24 +24,33 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #121212;
+  /* Updated background color */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #EDEDED;
+  /* Updated text color */
 }
 
 .App-link {
-  color: #61dafb;
+  color: #1DB954;
+  /* Primary highlight color */
+}
+
+.App-link:hover {
+  color: #15803D;
+  /* Slightly darker for hover */
 }
 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

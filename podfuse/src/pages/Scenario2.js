@@ -11,9 +11,9 @@ const images = [
 
 const Scenario2 = () => {
     return (
-        <div className="bg-gray-50 min-h-screen">
+        <div className="bg-[#121212] min-h-screen text-[#EDEDED]">
             <div className="container mx-auto px-6 lg:px-20 py-16">
-                <h1 className="text-4xl font-bold text-center text-gray-900 mb-12">
+                <h1 className="text-4xl font-bold text-center text-[#1DB954] mb-12">
                     Scenario 2
                 </h1>
                 <Slideshow images={images} />

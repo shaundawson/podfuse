@@ -12,13 +12,30 @@ const Wireframes = () => {
     ];
 
     return (
-        <div className="bg-gray-50 min-h-screen">
-            <section className="container mx-auto px-6 lg:px-20 py-16">
-                <h1 className="text-4xl font-bold text-gray-900 text-center mb-8">
-                    PodFuse Wireframes
-                </h1>
-                {/* Slideshow */}
-                <Slideshow images={wireframeImages} />
+        <div className="bg-[#121212] text-[#EDEDED] font-sans min-h-screen">
+            {/* Header Section */}
+            <section className="py-16">
+                <div className="container mx-auto px-6 lg:px-20 text-center">
+                    <h1 className="text-4xl lg:text-6xl font-bold tracking-tight">
+                        PodFuse <span className="text-[#1DB954]">Wireframes</span>
+                    </h1>
+                    <p className="mt-4 text-gray-400 text-lg">
+                        Explore the initial design concepts that shaped PodFuse’s final look.
+                        See how ideas evolved from sketches to a seamless podcast experience.
+                    </p>
+                </div>
+            </section>
+
+            {/* Slideshow Section */}
+            <section className="py-16">
+                <div className="container mx-auto px-6 lg:px-20">
+                    <div className="bg-[#181818] p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                        <h2 className="text-2xl font-semibold text-center text-[#1DB954] mb-6">
+                            Wireframe Slideshow
+                        </h2>
+                        <Slideshow images={wireframeImages} />
+                    </div>
+                </div>
             </section>
         </div>
     );

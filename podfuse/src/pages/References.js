@@ -29,30 +29,46 @@ const references = [
         text: '"A Person Playing Music in Podcast." Pexels, uploaded by Ketut Subiyanto, 2021.',
         link: "https://www.pexels.com/photo/a-person-playing-music-in-podcast-6686443/",
     },
+    {
+        text: "Figma. Collaborative Interface Design Tool.",
+        link: "https://www.figma.com",
+    },
+    {
+        text: "Patreon API Documentation. Patreon Developers.",
+        link: "https://docs.patreon.com/#introduction",
+    },
 ];
 
 const References = () => {
     return (
-        <div className="bg-gray-50 min-h-screen flex flex-col items-center justify-center">
+        <div className="bg-[#121212] min-h-screen text-[#EDEDED] flex items-center justify-center">
             <section className="container mx-auto px-6 lg:px-20 py-16">
-                <h1 className="text-4xl font-bold text-gray-900 text-center mb-8">
-                    References
-                </h1>
-                <ul className="space-y-4 text-gray-700">
+                {/* Title and Subheading */}
+                <div className="text-center mb-10">
+                    <h1 className="text-2xl font-extrabold text-[#1DB954]">
+                        References
+                    </h1>
+                    <p className="text-sm text-gray-400 mt-2">
+                        Resources and tools used in the development of PodFuse.
+                    </p>
+                </div>
+
+                {/* References List */}
+                <ul className="space-y-6">
                     {references.map((ref, index) => (
-                        <li key={index} className="flex items-start space-x-2">
-                            <span className="font-bold">{index + 1}.</span>
-                            <div>
-                                <p className="inline">{ref.text}</p>{" "}
-                                <a
-                                    href={ref.link}
-                                    className="text-blue-500 hover:underline"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    {ref.link}
-                                </a>
-                            </div>
+                        <li
+                            key={index}
+                            className="bg-[#1C1C1C] p-5 rounded-md shadow-md hover:shadow-lg transition duration-300"
+                        >
+                            <p className="text-sm text-gray-400 mb-1">{ref.text}</p>
+                            <a
+                                href={ref.link}
+                                className="text-sm text-[#1DB954] hover:underline"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                {ref.link}
+                            </a>
                         </li>
                     ))}
                 </ul>

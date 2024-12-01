@@ -16,46 +16,46 @@ const Slideshow = ({ images }) => {
     };
 
     return (
-        <div className="relative w-full h-screen flex items-center justify-center">
-            {/* Slides */}
-            <div className="w-full max-w-3xl h-auto overflow-hidden rounded-lg shadow-lg">
+        <div className="relative flex flex-col items-center justify-center">
+            {/* Slideshow container */}
+            <div className="relative w-[80%] max-w-4xl mx-auto h-[50vh] bg-[#121212] rounded-lg overflow-hidden shadow-lg">
                 {images.map((image, index) => (
                     <div
                         key={index}
-                        className={`absolute inset-0 transition-opacity duration-1000 ${index === current ? "opacity-100" : "opacity-0"
+                        className={`absolute inset-0 transition-opacity duration-700 ${index === current ? "opacity-100 z-10" : "opacity-0"
                             }`}
                     >
                         <img
                             src={image}
-                            alt={`Scenario ${index + 1}`}
-                            className="w-full max-h-[80vh] object-contain"
+                            alt={`Slide ${index + 1}`}
+                            className="w-full h-full object-contain"
                         />
                     </div>
                 ))}
             </div>
 
-            {/* Navigation Buttons */}
+            {/* Navigation buttons */}
             <button
                 onClick={prevSlide}
-                className="absolute top-1/2 left-4 -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full hover:bg-gray-700"
+                className="absolute top-1/2 left-4 -translate-y-1/2 bg-[#282828] text-white p-3 rounded-full hover:bg-[#1DB954] transition"
             >
                 &#10094;
             </button>
             <button
                 onClick={nextSlide}
-                className="absolute top-1/2 right-4 -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full hover:bg-gray-700"
+                className="absolute top-1/2 right-4 -translate-y-1/2 bg-[#282828] text-white p-3 rounded-full hover:bg-[#1DB954] transition"
             >
                 &#10095;
             </button>
 
-            {/* Dots */}
-            <div className="absolute bottom-8 flex justify-center space-x-2">
+            {/* Navigation dots */}
+            <div className="flex justify-center space-x-3 mt-4">
                 {images.map((_, index) => (
                     <button
                         key={index}
                         onClick={() => goToSlide(index)}
-                        className={`w-3 h-3 rounded-full ${index === current ? "bg-gray-800" : "bg-gray-400"
-                            }`}
+                        className={`w-3 h-3 rounded-full ${index === current ? "bg-[#1DB954]" : "bg-[#B3B3B3]"
+                            } transition`}
                     ></button>
                 ))}
             </div>
