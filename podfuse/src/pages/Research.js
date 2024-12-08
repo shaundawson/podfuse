@@ -86,37 +86,49 @@ const Research = () => {
                                 src="/podfuse-survey-results.png"
                                 alt="PodFuse Survey Results"
                                 className="mx-auto"
-                                style={{ width: "75%", height: "auto" }} // Adjust image size
+                                style={{ width: "50%", height: "auto" }} // Adjust image size
                             />
                         </div>
                     </div>
-
-                    {/* Case Study Section */}
-                    <div className="bg-[#1C1C1C] p-5 rounded-md shadow-md hover:shadow-lg transition duration-300">
-                        <h2 className="text-xl font-semibold text-[#EDEDED] mb-3">
-                            Case Study: Nandi, the Podcast Addict
-                        </h2>
-                        <p className="text-gray-400 leading-relaxed text-sm">
-                            Meet Nandi, a product manager who relies on podcasts during her commute. While she loves
-                            premium shows on Patreon, she often feels frustrated managing multiple feeds and dealing
-                            with XML imports. Using PodFuse, Nandi appreciated the automated syncing and intuitive
-                            interface, though she suggested adding advanced filtering options for even greater usability.
-                        </p>
+                    <p className="text-gray-400 leading-relaxed text-sm">
+                        Below is a histogram that shows the distribution of scores for each question.
+                    </p>
+                    {/* Histogram Survey Results Image */}
+                    <div className="mt-6 text-center">
+                        <img
+                            src="/survey-histogram.png"
+                            alt="PodFuse Histogram Survey Results"
+                            className="mx-auto"
+                            style={{ width: "50%", height: "auto" }} // Adjust image size
+                        />
                     </div>
+                </div>
 
-                    {/* Conclusion Section */}
-                    <div className="bg-[#1C1C1C] p-5 rounded-md shadow-md hover:shadow-lg transition duration-300">
-                        <h2 className="text-xl font-semibold text-[#EDEDED] mb-3">
-                            The Road Ahead for PodFuse
-                        </h2>
-                        <p className="text-gray-400 leading-relaxed text-sm">
-                            PodFuse has already shown great promise in simplifying podcast management. High scores in
-                            ease of use and engagement validate the core design, while feedback from surveys and
-                            interviews highlights opportunities for further refinement. With plans to improve onboarding,
-                            add advanced features, and conduct broader testing, PodFuse continues to evolve as the ultimate
-                            tool for podcast enthusiasts.
-                        </p>
-                    </div>
+                {/* Case Study Section */}
+                <div className="bg-[#1C1C1C] p-5 rounded-md shadow-md hover:shadow-lg transition duration-300">
+                    <h2 className="text-xl font-semibold text-[#EDEDED] mb-3">
+                        Case Study: Nandi, the Podcast Addict
+                    </h2>
+                    <p className="text-gray-400 leading-relaxed text-sm">
+                        Meet Nandi, a product manager who relies on podcasts during her commute. While she loves
+                        premium shows on Patreon, she often feels frustrated managing multiple feeds and dealing
+                        with XML imports. Using PodFuse, Nandi appreciated the automated syncing and intuitive
+                        interface, though she suggested adding advanced filtering options for even greater usability.
+                    </p>
+                </div>
+
+                {/* Conclusion Section */}
+                <div className="bg-[#1C1C1C] p-5 rounded-md shadow-md hover:shadow-lg transition duration-300">
+                    <h2 className="text-xl font-semibold text-[#EDEDED] mb-3">
+                        The Road Ahead for PodFuse
+                    </h2>
+                    <p className="text-gray-400 leading-relaxed text-sm">
+                        PodFuse has already shown great promise in simplifying podcast management. High scores in
+                        ease of use and engagement validate the core design, while feedback from surveys and
+                        interviews highlights opportunities for further refinement. With plans to improve onboarding,
+                        add advanced features, and conduct broader testing, PodFuse continues to evolve as the ultimate
+                        tool for podcast enthusiasts.
+                    </p>
                 </div>
             </section>
         </div>
