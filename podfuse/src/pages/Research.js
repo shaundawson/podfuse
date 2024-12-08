@@ -10,7 +10,7 @@ const Research = () => {
                         Research Behind PodFuse
                     </h1>
                     <p className="text-sm text-gray-400 mt-2">
-                        Insights and strategies that shaped the development of our seamless podcast platform.
+                        A deep dive into the data and insights that shaped the development of PodFuse.
                     </p>
                 </div>
 
@@ -21,12 +21,11 @@ const Research = () => {
                             The Rise of Podcasts
                         </h2>
                         <p className="text-gray-400 leading-relaxed text-sm">
-                            Podcasts have grown exponentially in the past decade, with platforms like
-                            Spotify, Apple Podcasts, and Patreon providing spaces for creators to thrive.
-                            Premium, ad-free content on platforms such as Patreon has enabled podcasters
-                            to directly connect with their audiences and monetize their work. However, this
-                            surge in premium podcast availability has created complexities for listeners,
-                            requiring manual feed management that disrupts the seamless experience users expect.
+                            Podcasts have exploded in popularity over the last decade, with platforms like Spotify,
+                            Apple Podcasts, and Patreon offering creators new ways to connect with their audiences.
+                            However, as premium, ad-free content has grown, listeners have faced challenges managing
+                            their subscriptions seamlessly. PodFuse aims to simplify this experience by consolidating
+                            premium feeds and eliminating manual imports.
                         </p>
                     </div>
 
@@ -37,58 +36,86 @@ const Research = () => {
                         </h2>
                         <ul className="list-disc pl-5 text-gray-400 space-y-2 text-sm">
                             <li>
-                                <strong className="text-[#1DB954]">Fragmented Platforms:</strong> Listeners often need to juggle multiple apps to
-                                access premium and free podcast feeds, creating a disjointed experience.
+                                <strong className="text-[#1DB954]">Fragmented Platforms:</strong> Managing premium and free podcast feeds across multiple apps.
                             </li>
                             <li>
-                                <strong className="text-[#1DB954]">Manual Imports:</strong> Managing XML files and importing premium feeds manually
-                                can be tedious and confusing, especially for less tech-savvy users.
+                                <strong className="text-[#1DB954]">Manual Imports:</strong> The hassle of managing XML files, especially for less tech-savvy users.
                             </li>
                             <li>
-                                <strong className="text-[#1DB954]">Subscription Overload:</strong> With no centralized platform to organize premium
-                                subscriptions, users struggle to keep track of their favorite shows.
+                                <strong className="text-[#1DB954]">Subscription Overload:</strong> Difficulty tracking premium subscriptions and favorite shows.
                             </li>
                         </ul>
                     </div>
 
-                    {/* User-Centered Design Section */}
+                    {/* Design Evaluation Section */}
                     <div className="bg-[#1C1C1C] p-5 rounded-md shadow-md hover:shadow-lg transition duration-300">
                         <h2 className="text-xl font-semibold text-[#EDEDED] mb-3">
-                            User-Centered Design Approach
+                            Evaluating the PodFuse Prototype
                         </h2>
                         <p className="text-gray-400 leading-relaxed text-sm">
-                            PodFuse was built with a user-first approach. Research into listener habits,
-                            frustrations, and expectations revealed the need for a single platform that
-                            integrates premium podcast feeds seamlessly. Personas like "Nandi, the Podcast Addict"
-                            and "Tracy, the Podcast Newbie" guided the development to address a wide range of user needs.
-                        </p>
-                    </div>
-
-                    {/* The PodFuse Solution Section */}
-                    <div className="bg-[#1C1C1C] p-5 rounded-md shadow-md hover:shadow-lg transition duration-300">
-                        <h2 className="text-xl font-semibold text-[#EDEDED] mb-3">
-                            The PodFuse Solution
-                        </h2>
-                        <p className="text-gray-400 leading-relaxed text-sm">
-                            PodFuse simplifies podcast listening by consolidating premium feeds from Patreon and
-                            similar platforms into one easy-to-access interface. By automating feed management and
-                            syncing new episodes instantly, PodFuse eliminates the manual work, enabling listeners
-                            to enjoy uninterrupted entertainment.
+                            To ensure PodFuse delivers on its promise of simplicity and engagement, I conducted a
+                            comprehensive design evaluation. This included:
                         </p>
                         <ul className="list-disc pl-5 text-gray-400 space-y-2 text-sm mt-4">
                             <li>
-                                <strong className="text-[#1DB954]">Automatic Sync:</strong> No more manual imports—PodFuse fetches your premium
-                                feeds directly from the source.
+                                A <strong>survey</strong> capturing user feedback on ease of use, engagement, and satisfaction.
                             </li>
                             <li>
-                                <strong className="text-[#1DB954]">Unified Feed:</strong> Combines all podcasts, whether free or premium, into a
-                                single, accessible library.
+                                An <strong>interview</strong> with a product manager and avid podcast enthusiast to uncover pain points and gather feature requests.
                             </li>
                             <li>
-                                <strong className="text-[#1DB954]">Cross-Platform Support:</strong> Works seamlessly with popular apps like Overcast
-                                and PocketCasts.
+                                Statistical analysis of the survey responses to identify key strengths and areas for improvement.
                             </li>
                         </ul>
+                        <p className="text-gray-400 leading-relaxed text-sm mt-4">
+                            Users praised PodFuse for its intuitive interface, automated syncing, and ability to simplify podcast management. However, feedback highlighted the need for better onboarding and advanced sorting features.
+                        </p>
+                    </div>
+
+                    {/* Results Visualization Section */}
+                    <div className="bg-[#1C1C1C] p-5 rounded-md shadow-md hover:shadow-lg transition duration-300">
+                        <h2 className="text-xl font-semibold text-[#EDEDED] mb-3">
+                            Survey Results at a Glance
+                        </h2>
+                        <p className="text-gray-400 leading-relaxed text-sm">
+                            Survey participants were asked to rate their experience with PodFuse across multiple categories. Below is a snapshot of the cumulative user feedback gathered from the design evaluation survey.
+                        </p>
+                        {/* Survey Results Image */}
+                        <div className="mt-6 text-center">
+                            <img
+                                src="/podfuse-survey-results.png"
+                                alt="PodFuse Survey Results"
+                                className="mx-auto"
+                                style={{ width: "75%", height: "auto" }} // Adjust image size
+                            />
+                        </div>
+                    </div>
+
+                    {/* Case Study Section */}
+                    <div className="bg-[#1C1C1C] p-5 rounded-md shadow-md hover:shadow-lg transition duration-300">
+                        <h2 className="text-xl font-semibold text-[#EDEDED] mb-3">
+                            Case Study: Nandi, the Podcast Addict
+                        </h2>
+                        <p className="text-gray-400 leading-relaxed text-sm">
+                            Meet Nandi, a product manager who relies on podcasts during her commute. While she loves
+                            premium shows on Patreon, she often feels frustrated managing multiple feeds and dealing
+                            with XML imports. Using PodFuse, Nandi appreciated the automated syncing and intuitive
+                            interface, though she suggested adding advanced filtering options for even greater usability.
+                        </p>
+                    </div>
+
+                    {/* Conclusion Section */}
+                    <div className="bg-[#1C1C1C] p-5 rounded-md shadow-md hover:shadow-lg transition duration-300">
+                        <h2 className="text-xl font-semibold text-[#EDEDED] mb-3">
+                            The Road Ahead for PodFuse
+                        </h2>
+                        <p className="text-gray-400 leading-relaxed text-sm">
+                            PodFuse has already shown great promise in simplifying podcast management. High scores in
+                            ease of use and engagement validate the core design, while feedback from surveys and
+                            interviews highlights opportunities for further refinement. With plans to improve onboarding,
+                            add advanced features, and conduct broader testing, PodFuse continues to evolve as the ultimate
+                            tool for podcast enthusiasts.
+                        </p>
                     </div>
                 </div>
             </section>
